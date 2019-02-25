@@ -24,6 +24,7 @@ El encapsulamiento es la forma de ocultar nuestros metodos, atributos de nustra 
     }
 ```
 ### 5. Describe con tus palabras el concepto de herencia e ilustra el concepto con imágenes.
+Son los  
 ## UML: diagrama de clases.
 ### 1. Investiga la historia y haz un resumen del Lenguaje de Modelado Unificado, donde se mencione: quienes son sus principales autores (Booch, Rumbaugh, Jacobson), en que tipo de sistemas se utiliza, en particular el Diagrama de Clases. Menciona algunas de las herramientas para el modelado en UML. ¿Sabes de alguna empresa local que utilice este lenguaje?
 ### 2. Escribe una propuesta de una máquina que venda distintos artículos y haz el diagrama de clases del sistema que propones. 
