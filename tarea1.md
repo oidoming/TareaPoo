@@ -8,7 +8,7 @@ Ejemplo 2: Al imaginar un pez sabemos lo que hace (comer, nadar, respirar), no h
 ### 3. ¿Por qué decimos que la Clase es el mecanismo de abstracción de los lenguajes OO?
 Porque es la manera de poner atributos y definirlos en cada clase.
 ### 4. Explica el concepto de encapsulamiento, busca dos imágenes que te ayuden a describir el concepto, una que tenga algún sistema sin encapsulamiento y otra donde si lo tenga. Menciona por que es importante y que problemas puede evitar. 
-El encapsulamiento es la forma de ocultar nuestros metodos, atributos de nustra clase para limitar la accesibilidad.
+El encapsulamiento es la forma de ocultar nuestros metodos, atributos de nustra clase para limitar la accesibilidad. Podemos evitar errorres en codigos muy largos y evitar que los atributos se modifiquen desde otras clases por ejemplo.
 ```csharp
 //Con encapsulamiento
    public class a
@@ -45,3 +45,4 @@ Algunas herramientas para el modelado UML son: MagicDraw, Papyrus UML, Modelio, 
 ### ¿Sabes de alguna empresa local que utilice este lenguaje?
 No
 ### 2. Escribe una propuesta de una máquina que venda distintos artículos y haz el diagrama de clases del sistema que propones.
+![Maquina](https://github.com/Oscar-inc117/TareaPoo/blob/master/clases.png?raw=true)
