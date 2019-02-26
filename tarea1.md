@@ -45,3 +45,4 @@ Algunas herramientas para el modelado UML son: MagicDraw, Papyrus UML, Modelio, 
 ### ¿Sabes de alguna empresa local que utilice este lenguaje?
 No
 ### 2. Escribe una propuesta de una máquina que venda distintos artículos y haz el diagrama de clases del sistema que propones. 
+![maquina](https://github.com/Oscar-inc117/TareaPoo/blob/master/clases.png)
