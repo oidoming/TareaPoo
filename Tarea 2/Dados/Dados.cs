@@ -24,27 +24,21 @@ class Dado
 
         public static bool operator <(Dado d1, Dado d2)
         {
-
             return true;
-
         }
 
         public static bool operator >(Dado d1, Dado d2)
         {
-
             return true;
-
         }
 
         public static bool operator ==(Dado d1, Dado d2)
-        {
-           
+        {          
             return true;
         }
 
         public static bool operator !=(Dado d1, Dado d2)
-        {
-           
+        {          
             return false;
         }
     }
@@ -76,19 +70,19 @@ class Dado
             }
             else if (d1 == d2 )
             {
-                Console.Write("Los dados {0} y {1} tienen el mismo valor", d1.color, d2.color);
+                Console.WriteLine("Los dados {0} y {1} tienen el mismo valor", d1.color, d2.color);
             }
             else if (d1 == d3)
             {
-                Console.Write("Los dados {0} y {1} tienen el mismo valor", d1.color, d3.color);
+                Console.WriteLine("Los dados {0} y {1} tienen el mismo valor", d1.color, d3.color);
             }
             else if (d2 == d3)
             {
-                Console.Write("Los dados {0} y {1} tienen el mismo valor", d2.color, d3.color);
+                Console.WriteLine("Los dados {0} y {1} tienen el mismo valor", d2.color, d3.color);
             }
             else
             {
-                Console.Write("Los dados tienen el mismo valor");
+                Console.WriteLine("Los dados tienen el mismo valor");
             }
 
             Console.ReadKey();
