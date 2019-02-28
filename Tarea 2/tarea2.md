@@ -1,3 +1,4 @@
+Dominguez Ortiz Oscar Ivan
 # Unidad 2. Clases y Objetos
 ## 2.1 Declaración de clases: atributos, métodos, encapsulamiento.
 Las clases y estructuras son bloques de codigo para separarse. Las estructuras van dentro de la clase y sirven para crear cosntructores o inicializar objetos.  
