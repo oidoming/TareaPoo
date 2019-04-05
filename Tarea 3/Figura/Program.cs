@@ -69,14 +69,7 @@ namespace Figura
      public Rectangulo ():base()
      {
         
-     }
-
-     /* public override void Dibuja() 
-     {
-         Color a = new Color();
-        a.setColor("Rojo");
-        Console.WriteLine("Se dibuja un triangulo en {0} de color {1}", position, a.getColor());
-     }*/
+     }   
     }
 
     class Triangulo : Figura
