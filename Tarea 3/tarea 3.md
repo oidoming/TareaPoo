@@ -3,7 +3,7 @@
 #### **Clase Base:** Es la clase original la cual va a heredar a otras clases.  
 #### **Clase Derivada:** Es la clase que hereda de la clase base
 ## 2. Haz un diagrama UML donde se muestre la relación de herencia entre las  clases Figura, Recangulo y Circulo como vimos en clase.
-![Clase](cls.png)
+![Herencia](uml.jpg)
 ## 3. ¿ Indica cuales son las clases base y las derivadas.
 #### Figura es la clase base y las otras son derivadas.
 ## 4. ¿Que es herencia simple y herencia múltiple? ¿En c# se puede hacer herencia múltiple?

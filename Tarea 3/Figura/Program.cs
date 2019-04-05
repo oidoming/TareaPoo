@@ -155,6 +155,8 @@ namespace Figura
             figuras.Add(new Circulo(new Vector2d(500,500), 250));
             figuras.Add(new Rectangulo());
             figuras.Add(new Cuadrado());
+            figuras.Add(new Triangulo());
+            
             foreach(Figura figura in figuras)
             figura.Dibuja();
         }
