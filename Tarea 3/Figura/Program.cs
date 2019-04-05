@@ -21,7 +21,7 @@ namespace Figura
         public string fill ,border;
 
           //Constructor por defecto 
-        public Figura():this( new Vector2d(100, 100))
+        public Figura():this( new Vector2d(200, 200))
         {
         
         }
@@ -46,7 +46,7 @@ namespace Figura
      {
          this.radio= radio;
      }
-     public Circulo ():base()
+     public Circulo ()
      {
          this.radio= 10;
      }
@@ -55,35 +55,65 @@ namespace Figura
      {
          Color a = new Color();
         
-        Console.WriteLine("Se dibuja un triangulo en {0} de color {1}", position, a.getColor());
+        Console.WriteLine("Se dibuja un circulo en {0} de color {1}", position, a.getColor());
      }
     }
  
     class Rectangulo : Figura
     {
-     
-     public Rectangulo(Vector2d pos):base(pos)
+        private int base1;
+        private int altura;
+     public Rectangulo(Vector2d pos, int base1, int altura):base(pos)
      {
-         
+         this.base1 = base1;
+         this.altura = altura;
      }
      public Rectangulo ():base()
      {
-        
+        this.base1 = 10;
+        this.altura = 20;
      }   
     }
 
-    class Triangulo : Figura
+    class Cuadrado : Figura
     {
         private int altura, base1;
-     public Triangulo(Vector2d pos, int altura, int base1):base(pos)
+     public Cuadrado(Vector2d pos, int altura, int base1):base(pos)
      {
          this.altura= altura;
          this.base1 = base1;
      }
-     public Triangulo ():base()
+     public Cuadrado():base()
      {
-         this.altura= 15;
-         this.base1= 8;
+         this.altura = 20;
+         this.base1 = 20;
+     }
+
+     /*public override void Dibuja() 
+     {
+        
+        Color a = new Color();
+        a.setColor("Amarillo");
+       // Console.WriteLine(a.getColor());
+        Console.WriteLine("Se dibuja un cuadrado en {0} de color {1}", position, a.getColor());
+     }*/
+
+    }
+
+    class Triangulo : Figura
+    {
+        private int altura, base1, hipotenusa;
+     public Triangulo(Vector2d pos, int altura, int base1, int hipotenusa):base(pos)
+     {
+         this.altura= altura;
+         this.base1 = base1;
+         this.hipotenusa = hipotenusa;
+     }
+     public Triangulo():base()
+     {
+         this.altura = 20;
+         this.base1 = 13;
+         this.hipotenusa = 27;
      }
 
      /*public override void Dibuja() 
@@ -103,7 +133,7 @@ namespace Figura
 
         public Color()
         {
-            color = "Blanco";
+            color = "Gris";
         }
 
         public void setColor(string color)
@@ -122,11 +152,11 @@ namespace Figura
         {
             Console.WriteLine("Hello World!");
             List<Figura> figuras = new List<Figura>();
-            figuras.Add(new Circulo());
-            figuras.Add(new Rectangulo(new Vector2d(200,200) ));
-            figuras.Add(new Triangulo());
-            foreach(Figura f in figuras)
-            f.Dibuja();
+            figuras.Add(new Circulo(new Vector2d(500,500), 250));
+            figuras.Add(new Rectangulo());
+            figuras.Add(new Cuadrado());
+            foreach(Figura figura in figuras)
+            figura.Dibuja();
         }
     }
 }
