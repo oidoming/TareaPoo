@@ -62,19 +62,17 @@ interface IMusico
         {
             //Musico m = new Musico("Django"); //(D) no se puede crear
 
-            Bajista b = new Bajista("Flea", "La Bajista");
+            Bajista b = new Bajista("Flea", "HiperBajo");
 
-            Guitarrista g = new Guitarrista("Santana", "El Gitarrista");
+            Guitarrista g = new Guitarrista("Santana", "GuitarraSonica");
 
-            IMusico[] m = new IMusico[2];
+            List<IMusico> m = new List<IMusico>();
+            m.Add(b);
+            m.Add(g);
 
-            m[0] = b;
-
-            m[1] = g;
-
-            foreach (IMusico y in m)
+            foreach (IMusico mu in m)
             {
-                Console.WriteLine(y.nombre);
+                Console.WriteLine(mu.nombre);
             }
 
             Console.ReadKey();

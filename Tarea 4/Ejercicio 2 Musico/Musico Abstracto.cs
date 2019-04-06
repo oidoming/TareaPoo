@@ -59,19 +59,17 @@ namespace Ejercicio_2_Musico
         {
             //Musico m = new Musico("Django"); //(D) no se puede crear
 
-            Bajista b = new Bajista("Flea", "La Bajista");
+            Bajista b = new Bajista("Flea", "hiperBajo");
 
-            Guitarrista g = new Guitarrista("Santana", "El Gitarrista");
+            Guitarrista g = new Guitarrista("Santana", "GuitarraSonica");
 
-            Musico[] m = new Musico[2];
+            List<Musico> m = new List<Musico>();
+            m.Add(b);
+            m.Add(g);
 
-            m[0] = b;
-
-            m[1] = g;
-
-            foreach (Musico y in m)
+            foreach (Musico mu in m)
             {
-                Console.WriteLine(y.nombre);
+                Console.WriteLine(mu.nombre);
             }
 
         Console.ReadKey();
